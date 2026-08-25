@@ -14,7 +14,11 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: lily58_left nice_view_adapter nice_view
+    shield: lily58_left
     snippet: studio-rpc-usb-uart
   - board: nice_nano_v2
-    shield: lily58_right nice_view_adapter nice_view
+    shield: lily58_right
+  # 刷 settings_reset 可清除左右半区及主机上的旧蓝牙配对信息
+  # 刷机顺序: 两个半区各刷一次 settings_reset -> 再刷回正常固件 -> 重新配对
+  - board: nice_nano_v2
+    shield: settings_reset
