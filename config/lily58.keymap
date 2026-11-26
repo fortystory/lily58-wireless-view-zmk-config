@@ -41,6 +41,16 @@
             bindings = <&macro_arraw_eq>;
             key-positions = <16 15>;
         };
+
+        combo_fj {
+            bindings = <&kp LS(SPACE)>;
+            key-positions = <28 31>;
+        };
+
+        combo_alt_shift_f8 {
+            bindings = <&kp LA(LS(F8))>;
+            key-positions = <38 39 40>;
+        };
     };
 
     macros {
